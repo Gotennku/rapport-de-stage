@@ -86,9 +86,13 @@ La structure se compose de :
 
 Cette organisation favorise la polyvalence. Chaque membre de l'équipe technique est amené à intervenir sur l'ensemble de la chaîne de développement : conception, développement backend et frontend, tests, déploiement et maintenance. Il n'y a pas de silos entre "développeurs backend" et "développeurs frontend" comme dans les grandes structures.
 
-### Mon tuteur : Lilian Garcia
+### Organisation du travail
 
-Durant mon stage, j'ai travaillé sous la supervision directe de Lilian Garcia, qui cumule les fonctions de responsable technique et de formateur. Sa méthode de management repose sur l'autonomie progressive : accompagnement rapproché au début, puis autonomie croissante au fil des semaines.
+L'entreprise organise chaque lundi une réunion hebdomadaire réunissant l'ensemble du personnel. Cette réunion permet de faire le point sur chacun des projets en cours, de partager les avancées, d'identifier les blocages et de coordonner les priorités de la semaine. Cette pratique favorise la transparence et permet à chacun d'avoir une vision globale de l'activité.
+
+### Mon encadrement
+
+Durant mon stage, j'ai bénéficié d'un double encadrement. **Lilian Garcia**, mon tuteur de stage, assurait la supervision technique globale et les décisions architecturales. **Clément**, chef de projet attitré, coordonnait mon travail au quotidien, définissait les priorités et suivait l'avancement des tâches. Cette organisation m'a permis de bénéficier à la fois d'une expertise technique et d'un suivi opérationnel régulier.
 
 ## 1.4 Ma place dans l'organisation
 
@@ -97,9 +101,9 @@ Durant mon stage, j'ai travaillé sous la supervision directe de Lilian Garcia, 
 En tant que développeur Full Stack stagiaire, j'ai été intégré comme membre à part entière de l'équipe technique. Mon rôle consistait à contribuer au développement des produits internes, avec une autonomie croissante au fil du stage.
 
 Concrètement, cela signifiait que je participais :
-- Aux réunions techniques hebdomadaires où l'équipe discute des priorités et des problèmes rencontrés
+- Aux réunions du lundi avec l'ensemble du personnel pour le suivi des projets
+- Aux points réguliers avec Clément pour définir les priorités de la semaine
 - Aux revues de code, où chaque développeur présente son travail et reçoit des retours
-- Aux sessions de pair programming occasionnelles avec mon tuteur
 - À la documentation des fonctionnalités développées
 
 ### Responsabilités confiées
