@@ -358,67 +358,31 @@ Les métriques de ma période sur SAIA témoignent de l'intensité du travail fo
 
 ## 3.3 Facilités rencontrées
 
-### Autonomie et confiance accordées
+Plusieurs éléments ont facilité mon travail durant ce stage.
 
-Mon tuteur m'a accordé une grande autonomie dans mes choix d'implémentation. Cette confiance m'a permis de proposer des solutions créatives et de les mettre en oeuvre sans validation préalable systématique.
+**L'autonomie accordée** : Mon tuteur m'a fait confiance dans mes choix d'implémentation, ce qui m'a permis de proposer des solutions créatives et de les mettre en oeuvre sans validation préalable systématique. Pour le système de génération de médias par exemple, j'ai pu concevoir l'architecture de bout en bout.
 
-Par exemple, pour le système de génération de médias, j'ai pu concevoir l'architecture de bout en bout, en justifiant mes choix a posteriori lors des revues de code. Cette responsabilisation a été très motivante.
+**La qualité de la documentation** : Sur SAIA, les cahiers des charges et spécifications étaient de bonne qualité, ce qui m'a permis de comprendre rapidement le contexte et les attentes.
 
-### Qualité de la documentation existante
-
-Sur le projet SAIA, la documentation existante était de bonne qualité. Les cahiers des charges et spécifications m'ont permis de comprendre rapidement le contexte et les attentes, sans avoir à déranger constamment mon tuteur pour des clarifications.
-
-### Technologies bien documentées
-
-Les technologies utilisées disposent d'excellentes documentations officielles et de communautés actives. Que ce soit Next.js, TypeScript, Prisma ou les APIs des services d'IA, j'ai pu trouver rapidement des réponses à mes questions techniques.
-
-### Environnement de développement mature
-
-L'environnement de développement était bien configuré : scripts automatisés, linter, formateur de code, tests automatisés. Ces outils m'ont permis de me concentrer sur le code métier plutôt que sur la configuration.
+**Les technologies modernes** : Next.js, TypeScript et Prisma disposent d'excellentes documentations officielles et de communautés actives. L'environnement de développement était bien configuré avec linter, formateur de code et tests automatisés.
 
 ## 3.4 Difficultés rencontrées
 
-### L'arrêt maladie : impact humain et organisationnel
+### L'arrêt maladie et le changement de projet
 
-La difficulté majeure de ce stage fut l'arrêt maladie de six semaines, du 9 octobre au 20 novembre 2025. Au-delà de l'aspect médical, cette interruption a eu plusieurs conséquences importantes.
+La difficulté majeure fut l'arrêt maladie de six semaines (9 octobre au 20 novembre 2025). Cette interruption a généré de la frustration (projet Zitelou inachevé), de l'anxiété (incertitude sur l'accueil au retour) et une forte pression temporelle (six semaines restantes pour rattraper).
 
-**La frustration de l'inachevé**
-Quitter le projet Zitelou alors que le travail était en cours a généré un sentiment d'inachèvement. J'avais développé une compréhension du métier, une connaissance du code, et tout cela a dû être mis de côté.
+Le changement de projet au retour avait ses avantages (nouveau départ, projet plus stimulant) mais aussi ses inconvénients : nouvelle montée en compétence sur une stack différente (Next.js/TypeScript au lieu de Symfony/PHP) tout en devant être immédiatement productif.
 
-**L'anxiété du retour**
-Pendant mon arrêt, je me suis interrogé sur l'accueil qui me serait réservé à mon retour. Est-ce que l'entreprise voudrait encore de moi ? Est-ce que mes collègues m'en voudraient d'avoir été absent si longtemps ?
+### Difficultés techniques
 
-**La pression temporelle**
-À mon retour, il restait six semaines avant la fin du stage. Il fallait rattraper le temps perdu tout en se formant à un nouveau projet. Cette pression a été difficile à gérer psychologiquement.
+Le système de preview utilise WebContainer, une technologie innovante permettant d'exécuter du code Node.js dans le navigateur. Bien que puissante, elle génère de nombreux bugs difficiles à diagnostiquer : composants non chargés, timeouts aléatoires, différences inexplicables entre le preview et le site final déployé.
 
-### Le changement de projet
-
-Être affecté à un projet différent au retour présentait des avantages et des inconvénients.
-
-L'avantage principal était de repartir de zéro, sans le poids du travail inachevé sur Zitelou. Le projet SAIA était aussi techniquement plus stimulant et correspondait davantage à mes intérêts.
-
-L'inconvénient majeur était la nécessité d'une nouvelle montée en compétence. J'ai dû apprendre une stack technique différente (Next.js et TypeScript au lieu de Symfony et PHP) tout en étant immédiatement productif.
-
-### Complexité technique du système de preview
-
-Le système de preview de SAIA utilise WebContainer, une technologie permettant d'exécuter du code Node.js directement dans le navigateur. Cette technologie, bien qu'innovante, génère de nombreux bugs difficiles à diagnostiquer.
-
-Les problèmes rencontrés incluaient :
-- Des composants qui ne se chargeaient pas correctement
-- Des timeouts aléatoires lors de la génération
-- Des différences inexplicables entre le preview et le site final déployé
-
-La résolution de ces problèmes m'a demandé beaucoup de temps, de persévérance et de lectures de documentation technique pointue.
-
-### Gestion des URLs et des images
-
-Un bug particulièrement subtil m'a occupé plusieurs jours. Les images uploadées par les utilisateurs généraient des URLs de type "blob:", qui fonctionnent côté navigateur mais pas côté serveur. J'ai dû implémenter une détection du type d'URL et des traitements différenciés.
+Un bug particulièrement subtil m'a occupé plusieurs jours : les images uploadées par les utilisateurs généraient des URLs de type "blob:", qui fonctionnent côté navigateur mais pas côté serveur. J'ai dû implémenter une détection du type d'URL et des traitements différenciés selon la source.
 
 ### Le rythme de fin de stage
 
-La dernière semaine de décembre a été exceptionnellement intense : 14 commits en une seule journée (le 31 décembre), près de 22 000 lignes de code ajoutées, 7 documents de passation rédigés.
-
-Ce rythme, s'il a permis d'atteindre tous les objectifs fixés, n'est pas soutenable sur le long terme. Il reflète la pression ressentie pour compenser l'absence due à l'arrêt maladie.
+La dernière semaine fut intense : 14 commits le 31 décembre, 22 000 lignes ajoutées, 7 documents de passation. Ce rythme, non soutenable sur le long terme, reflète la pression pour compenser l'arrêt maladie.
 
 ---
 
@@ -436,100 +400,41 @@ Ce rythme, s'il a permis d'atteindre tous les objectifs fixés, n'est pas souten
 
 ## 4.1 Apprentissages sur l'industrie et le business
 
-### Le marché de l'IA : opportunités et défis
+Ce stage m'a permis de découvrir le marché de l'IA de l'intérieur. La demande pour les compétences IA est réelle et croissante, les clients recherchent des solutions pratiques (pas des gadgets), et la capacité à intégrer plusieurs services d'IA est un avantage compétitif.
 
-Ce stage m'a permis de découvrir de l'intérieur le marché de la formation et des outils d'intelligence artificielle. Plusieurs constats ont marqué ma réflexion.
-
-Premièrement, la demande pour les compétences IA est réelle et croissante. Les entreprises de toutes tailles cherchent à intégrer ces technologies, mais manquent souvent de ressources humaines qualifiées.
-
-Deuxièmement, les clients recherchent des solutions pratiques et immédiates, pas des gadgets technologiques. Une fonctionnalité doit apporter une valeur concrète pour être adoptée.
-
-Troisièmement, la capacité à intégrer plusieurs services d'IA différents est un avantage compétitif. Les plateformes qui savent orchestrer GPT, Gemini, Imagen et d'autres services offrent une expérience plus riche que celles qui se limitent à une seule technologie.
-
-### Les réalités du développement professionnel
-
-Au-delà des aspects techniques, j'ai découvert plusieurs réalités du monde professionnel.
-
-**Les deadlines sont réelles** : contrairement aux projets scolaires où un retard se traduit par une mauvaise note, en entreprise les retards ont des conséquences business. Un client qui attend, un lancement reporté, une démonstration ratée.
-
-**Le code legacy existe** : reprendre le code écrit par quelqu'un d'autre fait partie du quotidien. Il faut savoir comprendre la logique d'un autre développeur, s'adapter à ses conventions, et parfois accepter des choix qu'on n'aurait pas faits.
-
-**L'imprévu fait partie du jeu** : maladie, bugs bloquants, changements de priorités, évolutions technologiques. La capacité à s'adapter est au moins aussi importante que les compétences techniques pures.
+J'ai aussi découvert les réalités du développement professionnel : les deadlines ont des conséquences business réelles, le code legacy fait partie du quotidien, et l'imprévu (maladie, bugs, changements de priorités) nécessite une forte capacité d'adaptation.
 
 ## 4.2 Connaissances organisationnelles acquises
 
-### Gestion de projet et priorisation
-
-J'ai appris à prioriser les tâches selon leur impact business. Toutes les fonctionnalités ne se valent pas : certaines sont critiques pour le lancement, d'autres peuvent attendre.
-
-Cette priorisation implique de savoir dire non ou "plus tard" à certaines demandes, et de se concentrer sur ce qui apporte le plus de valeur.
-
-### Communication et transparence
-
-J'ai compris l'importance de communiquer régulièrement sur l'avancement, surtout quand les choses ne vont pas comme prévu. Un problème signalé tôt peut être résolu ; un problème caché devient une crise.
-
-La transparence sur les difficultés n'est pas un aveu de faiblesse mais une marque de professionnalisme.
-
-### Documentation continue
-
-L'expérience de rédaction de la documentation de passation m'a convaincu de l'importance de documenter au fil de l'eau. Attendre la fin d'un projet pour documenter est une erreur : on oublie les détails, on manque de temps, et le résultat est de moindre qualité.
+J'ai appris à prioriser les tâches selon leur impact business et à savoir dire "plus tard" à certaines demandes. J'ai compris l'importance de communiquer régulièrement sur l'avancement, surtout en cas de difficultés. La rédaction de la documentation de passation m'a convaincu de l'importance de documenter au fil de l'eau plutôt qu'en fin de projet.
 
 ## 4.3 Connaissances techniques acquises
 
-### Compétences backend
+**Backend** : Symfony/API Platform (PHP) et Next.js/Prisma (TypeScript) pour structurer des APIs REST, gérer l'authentification JWT et intégrer des services de paiement.
 
-J'ai approfondi mes compétences en développement backend avec deux technologies différentes :
+**Frontend** : React, TailwindCSS, Zustand pour la gestion d'état, et shadcn/ui pour les composants.
 
-En PHP avec Symfony et API Platform, j'ai appris à structurer une API REST professionnelle, à gérer l'authentification JWT et à intégrer des services de paiement.
-
-En TypeScript avec Next.js et Prisma, j'ai découvert une approche différente, plus orientée full-stack, avec une gestion élégante des types et une intégration base de données simplifiée.
-
-### Compétences frontend
-
-J'ai développé mes compétences en React et en styling avec TailwindCSS. La création de composants réutilisables, la gestion de l'état avec Zustand, et l'intégration de bibliothèques de composants comme shadcn/ui font maintenant partie de mon arsenal technique.
-
-### Intégration de services d'IA
-
-L'aspect le plus formateur techniquement fut l'intégration de multiples services d'IA. J'ai appris à utiliser les APIs de Google (Gemini pour le texte, Imagen pour les images, Veo pour les vidéos), d'OpenAI, et de services de stock media.
-
-Cette expérience me positionne favorablement pour les évolutions du marché, où l'intégration d'IA dans les applications devient la norme.
+**IA** : Intégration des APIs Google (Gemini, Imagen, Veo), OpenAI et services de stock media. Cette expérience me positionne favorablement pour un marché où l'intégration d'IA devient la norme.
 
 ## 4.4 Apport de ma mission à l'entreprise
 
-### Sur le projet Zitelou
+**Sur Zitelou** : bases solides (architecture backend testée, intégration Stripe, 85% de couverture de tests) permettant une reprise rapide du développement.
 
-Mon travail sur Zitelou, bien qu'interrompu, a posé des bases solides :
-- Une architecture backend propre et testée
-- Une intégration Stripe fonctionnelle
-- Une couverture de tests de 85%
-
-Ces fondations permettront une reprise plus rapide du développement, avec moins de dette technique à gérer.
-
-### Sur le projet SAIA
-
-Mon apport sur SAIA a été plus conséquent et visible :
-
-**Le système de génération de médias** constitue une fonctionnalité majeure qui enrichit significativement les sites créés par les utilisateurs. Cette valeur ajoutée peut justifier une tarification plus élevée.
-
-**Les templates par secteur** améliorent la pertinence des sites générés, réduisant le temps de personnalisation pour l'utilisateur final.
-
-**La correction des bugs** a stabilisé la plateforme et amélioré l'expérience utilisateur, réduisant potentiellement le taux d'abandon.
-
-**La documentation de passation** représente un investissement important pour l'entreprise. Elle permettra à un nouveau développeur d'être opérationnel en quelques heures plutôt qu'en plusieurs jours. La note A- obtenue à l'audit valide la qualité de ce travail.
+**Sur SAIA** : système de génération de médias (fonctionnalité majeure), templates par secteur (pertinence améliorée), correction de bugs (stabilité), et documentation de passation (note A-, onboarding en quelques heures au lieu de plusieurs jours).
 
 ## 4.5 Bilan personnel et perspectives
 
-Ce stage a confirmé mon intérêt pour le développement Full Stack. La variété des technologies manipulées m'a permis d'affiner mes préférences : j'apprécie particulièrement l'écosystème TypeScript/Next.js pour sa cohérence et sa productivité.
+Ce stage a confirmé mon intérêt pour le développement Full Stack. La variété des technologies manipulées m'a permis d'affiner mes préférences : j'apprécie particulièrement l'écosystème TypeScript/Next.js pour sa cohérence et sa productivité. L'intégration de services d'IA m'a ouvert de nouvelles perspectives professionnelles dans un domaine en pleine expansion.
 
-L'expérience de l'arrêt maladie, bien que difficile, m'a appris l'importance de la résilience. J'ai su rebondir, me réadapter à un nouveau contexte, et finalement atteindre tous les objectifs fixés. Cette capacité d'adaptation sera un atout pour ma carrière.
+L'expérience de l'arrêt maladie, bien que difficile sur le moment, s'est révélée formatrice. Elle m'a appris l'importance de la résilience et de la capacité à rebondir face aux imprévus. J'ai su me réadapter à un nouveau contexte, acquérir rapidement de nouvelles compétences, et finalement atteindre tous les objectifs fixés malgré le temps réduit. Cette capacité d'adaptation sera un atout majeur pour ma carrière.
 
-Les axes d'amélioration que j'ai identifiés pour moi-même :
-- Mieux estimer le temps nécessaire aux tâches (tendance à sous-estimer)
-- Écrire les tests en parallèle du code plutôt qu'après
-- Documenter de manière continue plutôt qu'en fin de projet
-- Mieux gérer le stress des deadlines serrées
+Les axes d'amélioration que j'ai identifiés pour moi-même sont les suivants :
+- Mieux estimer le temps nécessaire aux tâches, car j'ai tendance à sous-estimer la complexité
+- Écrire les tests en parallèle du code plutôt qu'après, pour une meilleure couverture
+- Documenter de manière continue plutôt qu'en fin de projet, pour ne pas perdre d'informations
+- Mieux gérer le stress des deadlines serrées, en maintenant un rythme soutenable
 
-Ce stage représente une étape importante dans mon parcours. Il m'a donné confiance en mes capacités techniques et m'a montré que je pouvais apporter une vraie valeur à une entreprise, même en tant que stagiaire et malgré des circonstances difficiles.
+Ce stage représente une étape importante dans mon parcours professionnel. Il m'a donné confiance en mes capacités techniques et m'a montré que je pouvais apporter une vraie valeur à une entreprise, même en tant que stagiaire et malgré des circonstances difficiles. Je suis reconnaissant envers USTS et mon tuteur Lilian Garcia pour cette opportunité d'apprentissage et de développement.
 
 ---
 
